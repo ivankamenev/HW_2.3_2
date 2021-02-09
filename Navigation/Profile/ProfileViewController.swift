@@ -73,7 +73,7 @@ extension ProfileViewController: UITableViewDelegate, UITableViewDataSource {
         
         let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: String(describing: ProfileHeaderView.self)) as! ProfileHeaderView
         
-        
+        tableView.tableHeaderView = headerView
         return headerView
     
     }
